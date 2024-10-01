@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamix - Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        /* Reset and ensure the height is 100% */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Ensure the entire body uses flexbox */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Container to hold the content */
+        .container {
+            flex: 1;
+            padding-bottom: 60px; /* Add padding to avoid overlap with the footer */
+        }
+
+        /* Games Page Styling */
+        .games-list {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .games-list h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .game-card {
+            display: inline-block;
+            width: 250px;
+            background-color: #1f1f1f;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .game-card img {
+            width: 100%;
+            
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            margin: 15px 0;
+        }
+
+        .game-card p {
+            margin: 5px 0;
+        }
+
+        .game-card button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #50fa7b;
+            color: #121212;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .game-card button:hover {
+            background-color: #36c76e;
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Gamix</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="games-list">
+        <h2>Our Favorite Games</h2>
+        <div class="game-card">
+            <img src="imgs/pubg1.jpg" alt="Game 1">
+            <h3>Game 1</h3>
+            <p>Genre: Adventure</p>
+            <p>Platform: PC, Console</p>
+            <button onclick="viewGameDetails('Game 1')">View Details</button>
+        </div>
+        <div class="game-card">
+            <img src="imgs/cod1.jpg" alt="Game 2">
+            <h3>Game 2</h3>
+            <p>Genre: Shooter</p>
+            <p>Platform: PC, Mobile</p>
+            <button onclick="viewGameDetails('Game 2')">View Details</button>
+        </div>
+        <div class="game-card">
+            <img src="imgs/fortnite2.jpg" alt="Game 3">
+            <h3>Game 3</h3>
+            <p>Genre: FPS Shooter</p>
+            <p>Platform: PC, Mobile</p>
+            <button onclick="viewGameDetails('Game 3')">View Details</button>
+        </div>
+        <div class="game-card">
+            <img src="imgs/freefire1.jpg" alt="Game 4">
+            <h3>Game 4</h3>
+            <p>Genre: Action</p>
+            <p>Platform: Mobile</p>
+            <button onclick="viewGameDetails('Game 4')">View Details</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gaming Community. All rights reserved.</p>
+    </footer>
+
+    <script >
+        // Function to view more details about a specific game
+        function viewGameDetails(gameName) {
+            alert("More details about " + gameName + " will be available soon.");
+        }
+
+    </script>
+</body>
+</html>
