@@ -12,6 +12,7 @@
         
         padding: 50px 20px;
         text-align: center;
+
     }
 
     .contact-form h1 {
@@ -26,6 +27,7 @@
 
     .form-group {
         margin-bottom: 20px;
+        width: 250px;
     }
 
     .form-group label {
@@ -58,19 +60,8 @@
     button[type="submit"]:hover {
         background-color: #36c76e;
     }
-
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-
-    /* Ensure the entire body uses flexbox */
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Ensures content spreads evenly */
-        min-height: 100vh;
+    #sub-btn {
+        text-align: center;
     }
 
     /* Footer Styling */
@@ -85,18 +76,12 @@
         padding: 20px;
     }
 
-    /* Adjust content above footer */
-    .contact-form {
-        flex: 1; /* Ensures contact-form takes remaining height */
-        padding: 50px 20px;
-        text-align: center;
-    }
 
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Gamix</div>
+        <div class="logo">GAMIX</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -104,6 +89,8 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="community.html">Community</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -123,7 +110,8 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            
+            <div id="sub-btn"><button type="submit">Send Message</button></div>
         </form>
     </section>
 
